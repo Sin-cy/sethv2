@@ -60,7 +60,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [11, -10, -13], fov: 15 }}
+      camera={{ position: [9, -10, -13], fov: 15 }}
       gl={{ preserveDrawingBuffer: true }}
       
     >
@@ -68,9 +68,10 @@ const ComputersCanvas = () => {
         <OrbitControls
           enableZoom={false}
           enablePan={false}
+          autoRotate
           enableDamping={true}
           maxPolarAngle={Math.PI / 1}
-          minPolarAngle={Math.PI / 3}
+          minPolarAngle={Math.PI / 4}
           
         />
         <Computers isMobile={isMobile} />
