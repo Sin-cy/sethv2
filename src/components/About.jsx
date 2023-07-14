@@ -41,16 +41,16 @@ const About = () => {
 
       </motion.div>
       <motion.p variants={fadeIn("", "",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Im a student dreaming to become a software developer with experience
-        from SCB TECH X , a digital company that creates OPEN APIS 
-        and other services for SCB Bank. I am familiar with JavaScript, React
+        Im a student dreaming and focusing to become a software developer with experiences
+        from SCB TECH X , a digital company that creates OPEN APIs
+        and other services for SCB Siam Commerical Bank. I am familiar with JavaScript, React.js
         ,TypeScript ,Node.js ,HTML and CSS as I have worked on 
-        a Time Tracking Project which is an internal web module created
-        for the ease of routine work for the SE team. Ive also had some
-        experience with on boarding APIs via postman app editing consents, 
-        consumer profiles and etc. Im a fast learner and hard working. 
-        Let works together as Im sure I can provide useful solutions to problems 
-        and brings creative ideas to Life.
+        a Time Tracking Project created for the ease of routine work for the SE team. 
+        Ive also had some experience with Onboarding APIs editing consents, 
+        consumer profiles and etc. Im a fast learner, hard worker and ready to put up with whatever challenging tasks I face.
+        I believe this is how I improve myself on my journey to become a great and consistent Software developer.
+        I hope we can work together as Im sure I can provide useful solutions to problems 
+        and bring creative ideas to Life.
 
       </motion.p>
 

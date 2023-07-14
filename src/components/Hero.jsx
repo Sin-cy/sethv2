@@ -19,8 +19,8 @@ const Hero = () => {
             Hi,I am <span className='text-[#facc15]'>Pheno</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Im an Internship working towards  <br className='sm:block hidden'/> being a software engineer currently
-            honing my skills and experience.
+            Im a self-taught Intern currently working hard towards  <br className='sm:block hidden'/> being a software engineer
+            honing my skills and experiences with the resources I learnt from both my greatly skilled team and my researches.
           </p>
         </div>
 
