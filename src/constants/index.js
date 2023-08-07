@@ -169,11 +169,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "To be added",
+    name: "Unknown",
+    designation: "unknown position",
+    company: "unknown comp",
+    // image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   // {
   //   testimonial:
@@ -195,9 +195,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "To be added",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "to be done",
     tags: [
       {
         name: "react",
@@ -213,7 +213,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    // source_code_link: "https://github.com/",
   },
   // {
   //   name: "Job IT",
