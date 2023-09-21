@@ -50,7 +50,7 @@ const About = () => {
         consumer profiles and etc. Im a fast learner, hard worker and ready to put up with whatever challenging tasks I face.
         I believe this is how I improve myself on my journey to become a great and consistent Software developer.
         I hope we can work together as Im sure I can provide useful solutions to problems 
-        and bring creative ideas to Lifeee.
+        and bring creative ideas to Life.
 
       </motion.p>
 
