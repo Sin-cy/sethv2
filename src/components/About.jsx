@@ -13,7 +13,7 @@ const ServiceCard = ({index , title , icon }) => {
   return(
     <Tilt className="xs:w-[250px] w-full">
       <motion.div variants={fadeIn("right","spring",0.5 * index, 0.75)} 
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shawdow-card'>
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
 
         <div 
           options={{
@@ -41,16 +41,14 @@ const About = () => {
 
       </motion.div>
       <motion.p variants={fadeIn("", "",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Im a student dreaming and focusing to become a software developer with experiences
-        from SCB TECH X , a digital company that creates OPEN APIs
-        and other services for SCB Siam Commercial Bank. I am familiar with JavaScript, React.js
-        ,TypeScript ,Node.js ,HTML and CSS as I have worked on 
-        a Time Tracking Project created for the ease of routine work for the SE team. 
-        Ive also had some experience with Onboarding APIs editing consents, 
-        consumer profiles and etc. Im a fast learner, hard worker and ready to put up with whatever challenging tasks I face.
-        I believe this is how I improve myself on my journey to become a great and consistent Software developer.
-        I hope we can work together as Im sure I can provide useful solutions to problems 
-        and bring creative ideas to Lifee.
+      I am an enthusiastic student embarking on the path of becoming a proficient software developer.
+      During my tenure at SCB TECH X, a digital enterprise specializing in OPEN APIs and bespoke services for SCB Siam Commercial Bank, 
+      I have honed my skills in JavaScript, React, TypeScript, HTML, and CSS both on the Frontend and Backend. 
+      My practical experience includes meaningful contributions to a Time Tracking Project, optimizing the workflow for our esteemed software engineering team. 
+      Additionally, I have actively participated in projects involving Onboarding APIs and Company Gateways. My approach is characterized 
+      by a keen aptitude for rapid assimilation of new concepts and a proactive stance towards challenging assignments. 
+      I eagerly anticipate the opportunity to channel my problem-solving acumen and creative mindset 
+      to bring new Ideas to life at the same time constantly improve myself.
 
       </motion.p>
 
