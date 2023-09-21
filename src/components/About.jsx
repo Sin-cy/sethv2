@@ -43,7 +43,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         Im a student dreaming and focusing to become a software developer with experiences
         from SCB TECH X , a digital company that creates OPEN APIs
-        and other services for SCB Siam Commerical Bank. I am familiar with JavaScript, React.js
+        and other services for SCB Siam Commercial Bank. I am familiar with JavaScript, React.js
         ,TypeScript ,Node.js ,HTML and CSS as I have worked on 
         a Time Tracking Project created for the ease of routine work for the SE team. 
         Ive also had some experience with Onboarding APIs editing consents, 
