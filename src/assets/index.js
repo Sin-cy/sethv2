@@ -36,6 +36,12 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import mylogo from "./mylogo.svg"
 
+import pmix from "./company/pmix.png"
+import plek from "./company/plek.png"
+import poddy from "./company/poddy.png"
+import projecttimesheet from "./tech/projecttimesheet.png"
+
+
 export {
   logo,
   backend,
@@ -68,4 +74,9 @@ export {
   mylogo,
   techx,
   gitlab,
+  pmix,
+  plek,
+  poddy,
+  projecttimesheet,
+
 };

@@ -22,6 +22,12 @@ import {
   threejs,
   techx,
   gitlab,
+  pmix,
+  plek,
+  poddy,
+  projecttimesheet,
+  
+
 } from "../assets";
 
 export const navLinks = [
@@ -118,11 +124,10 @@ const experiences = [
     date: "June 2023 - September 2023",
     points: [
       "Developing internal web module using React.js, TypeScript and other technologies such as Ant Design Components",
-      "Part of internal Time Tracking Project that is created to easily keep track of Work, Sprints and Project status for the Software Engineer Team",
-      "Integrating APIs and backend services into Time Sheet Projects using GraphQL, MongoDB and etc.",
+      "Part of a vital aspect of our internal Time Tracking Project, designed to seamlessly monitor work progress, sprint activities, and project statuses for our esteemed Software Engineering Team.",
+      "Integrating APIs and Backend services into Time Sheet Projects.",
       "Collaborating with teams including system analyst, quality assurance, product managers, and other developers to create high-quality products for clients.",
-      "Adding, creating , deleting and fetching data from MongoDB into GraphQL for Project Time Sheet",
-      "Participating in other projects responsibile for Onboarding Open APIs integration using Postman, MongoDB, SQL and etc.",
+      "Participating in other projects responsible for Gateway management and Onboarding Open APIs integration using Postman, CA Portal, SQL and etc.",
     ],
   },
   // {
@@ -169,19 +174,35 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "To be added",
-    name: "Unknown",
-    designation: "unknown position",
-    company: "unknown comp",
-    // image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "He learnt new things pretty quick. I'm sure he could be a great programmer.",
+    name: "( Mix ) Naiprakarn Nakornkhet",
+    designation: "Software Engineer",
+    company: "SCB Tech X",
+    image: pmix ,
+  },
+  {
+    testimonial:
+      "He has a strong passion for development and consistently pays close attention when learning.",
+    name: "( Lek ) Apinun Uppanun",
+    designation: "Software Engineer",
+    company: "SCB Tech X",
+    image: plek ,
+  },
+  {
+    testimonial:
+      "He fits right in quickly and able to deliver any tasks assigned to. I will surely recommend him to any teams.",
+    name: "( Oddy ) Nawapoom Lohajarernvanich",
+    designation: "Software Engineer Manager",
+    company: "SCB Tech X",
+    image: poddy,
   },
   // {
   //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: "Chris Brown",
-  //   designation: "COO",
-  //   company: "DEF Corp",
-  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
+  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //   name: "Lisa Wang",
+  //   designation: "CTO",
+  //   company: "456 Enterprises",
+  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
   // },
   // {
   //   testimonial:
@@ -195,12 +216,18 @@ const testimonials = [
 
 const projects = [
   {
-    name: "To be added",
+    name: "Project Time Track",
     description:
-      "to be done",
+      "This project was developed to offer a streamlined view and efficient routine tracking of team members, project tasks, status updates, efforts, and sprint progress. Additionally, it includes a feature for rapid estimation of effort points required for both Developers and Quality Assurance teams to focus on specific tasks or projects.",
+
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+        
+      },
+      {
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
@@ -208,11 +235,11 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ant-design",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: projecttimesheet,
     // source_code_link: "https://github.com/",
   },
   // {
