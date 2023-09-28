@@ -200,7 +200,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "He is a good representative who proves that everyone cna learn and develop oneself to be a programmer no matter what field you graduated.",
+      "He is a good representative who proves that everyone can learn and develop oneself to be a programmer no matter what field you graduated.",
     name: "( Aom ) Apinya Mokkaraphan",
     designation: "Senior Talent Acquisitions Officer",
     company: "SCB Tech X",
