@@ -25,7 +25,9 @@ import {
   pmix,
   plek,
   poddy,
+  paom,
   projecttimesheet,
+
   
 
 } from "../assets";
@@ -196,14 +198,14 @@ const testimonials = [
     company: "SCB Tech X",
     image: poddy,
   },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: "Lisa Wang",
-  //   designation: "CTO",
-  //   company: "456 Enterprises",
-  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-  // },
+  {
+    testimonial:
+      "He is a good representative who proves that everyone cna learn and develop oneself to be a programmer no matter what field you graduated.",
+    name: "( Aom ) Apinya Mokkaraphan",
+    designation: "Senior Talent Acquisitions Officer",
+    company: "SCB Tech X",
+    image: paom,
+  },
   // {
   //   testimonial:
   //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",

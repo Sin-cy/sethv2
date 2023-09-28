@@ -40,7 +40,7 @@ import pmix from "./company/pmix.png"
 import plek from "./company/plek.png"
 import poddy from "./company/poddy.png"
 import projecttimesheet from "./tech/projecttimesheet.png"
-
+import paom from "./company/paom.png"
 
 export {
   logo,
@@ -78,5 +78,6 @@ export {
   plek,
   poddy,
   projecttimesheet,
+  paom,
 
 };
