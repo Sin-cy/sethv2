@@ -11,9 +11,9 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={2} groundColor='blue' />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[0, 15, -20]}
         angle={0.12}
         penumbra={1}
         intensity={1}
@@ -23,8 +23,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        //scale={isMobile ? 0.7 : 0.75}
+        scale={2.0}
+        position={isMobile ? [0, -3, -2.2] : [0, -4.85, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -57,25 +58,29 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+            shadows
       frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [9, -10, -13], fov: 15 }}
+      //dpr={[1, 2]}
+      //camera={{ position: [0, 15, -20], fov: 25 }}
+      //camera={{ position: [9, -10, -13], fov: 13 }}
+      camera={{ fov: 28 , near: 0.1 , far: 200 , position: [4,5,6]}}
       gl={{ preserveDrawingBuffer: true }}
       
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-          autoRotate
-          enableDamping={true}
-          maxPolarAngle={Math.PI / 1}
-          minPolarAngle={Math.PI / 4}
-          
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+            <Suspense fallback={<CanvasLoader />}>
+                <OrbitControls
+                    enableZoom={false}
+                    enablePan={false}
+                    autoRotate
+                    enableDamping={true}
+                    maxPolarAngle={Math.PI / 2}
+                    minPolarAngle={Math.PI / 2.25}
+                    minDistance={20}
+                    maxDistance={50}
+
+                />
+                <Computers isMobile={isMobile} />
+            </Suspense>
     
     
 

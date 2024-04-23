@@ -7,14 +7,19 @@ import { technologies } from "../constants"
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology) => (
-        <div className="w-28 h-28 " key={technology.name} >
-          <BallCanvas icon={technology.icon} />
+    <div>
+            <h2 className="flex flex-row justify-center text-[18px] m-auto my-10">Try using your cursor to rotate these objects 🥶</h2>
 
-        </div>
+            <div className="flex flex-row flex-wrap justify-center gap-10">
+                {technologies.map((technology) => (
+                    <div className="w-28 h-28 " key={technology.name} >
+                        <BallCanvas icon={technology.icon} />
 
-      ))}
+                    </div>
+
+                ))}
+            </div>
+
     </div>
   )
 }
