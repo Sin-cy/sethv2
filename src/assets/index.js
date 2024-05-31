@@ -47,6 +47,7 @@ import wargame from "./tech/wargame.png"
 import boredbot from "./tech/boredbot.png"
 import blogspace from "./tech/blogspace.png"
 import dashboard from "./tech/dashboard.png"
+import cookieconsent from "./tech/cookieconsent.png"
 
 export {
     logo,
@@ -91,5 +92,6 @@ export {
     boredbot,
     blogspace,
     dashboard,
+    cookieconsent,
 
 };

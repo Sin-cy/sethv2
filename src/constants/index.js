@@ -33,6 +33,7 @@ import {
     boredbot,
     blogspace,
     dashboard, 
+    cookieconsent,
 
 } from "../assets";
 
@@ -350,6 +351,26 @@ const projects = [
         ],
         image: dashboard,
         source_code_link : "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
+    },
+    {
+        name: "Cookie Consent",
+        description : "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight backgrounda animations.",
+        tags: [
+            {
+                name : "javascript",
+                color : "green-text-gradient"
+            },
+            {
+                name : "html",
+                color : "blue-text-gradient"
+            },
+            {
+                name : "css",
+                color : "pink-text-gradient"
+            },
+        ],
+        image: cookieconsent,
+        source_code_link : "https://github.com/Sin-cy/js-projects/tree/main/cookieConsent",
     },
     {
         name: "Project Time Track",
