@@ -16,14 +16,14 @@ const Hero = () => {
 
         <div>
                 <h1 className={`${styles.heroHeadText} text-white`}>
-                    Hi,I am <span className='text-[#facc15]'>Pheno</span>
+                    Setthanan <span className='text-[#facc15]'>Pheno</span>
                 </h1>
-                <p className={`${styles.heroSubText} mt-2 text-blue-100 drop-shadow-2xl`}>
+                <p className={`${styles.heroSubText} mt-5 drop-shadow-3xl bg-clip-text text-amber-400 backdrop-blur-[2px] backdrop-brightness-100  backdrop-contrast-120  `}>
                     I am a self-motivated engineering student,<br className='sm:block hidden'/> 
                     committed to evolving into a highly skilled software engineer. My journey entails refining my skills and broadening my experiences, 
                     drawing from invaluable knowledge imparted by a highly skilled team, mentors, and my personal research endeavors.
                 </p>
-                <p className="flex flex-row justify-end text-sky-100 my-3">"PS, the floating galaxy ⬇️ is moveable💫"</p> 
+                <p className="flex flex-row justify-end sm:text-yellow-400 my-5 lg:text-yellow-400">"Try moving the galaxy"</p> 
         </div>
 
 

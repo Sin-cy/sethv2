@@ -17,9 +17,8 @@ const ProjectCard = ( { index , name , description , tags , image , source_code_
     const isMobile = window.innerWidth < 768;
 
     if(!isMobile) {
-        boxVariants = {
-            fadeIn : fadeIn("up", "spring", index * 0.5, 0.75)
-        }
+        boxVariants = fadeIn("up", "spring", index * 0.5, 0.75)
+            //fadeIn : fadeIn("up", "spring", index * 0.5, 0.75)
     }
 
 
@@ -85,12 +84,12 @@ const Works = () => {
     const isMobile = window.innerWidth < 768;
 
     if(!isMobile) {
-        boxVariant = {
-            fadeIn : fadeIn("","",0.1,1)
-        }
-        box2Variant = {
-            textVariant: textVariant()
-        }
+        boxVariant = fadeIn("","",0.1,1)
+            //fadeIn : fadeIn("","",0.1,1)
+        ;
+        box2Variant = textVariant() 
+            //textVariant: textVariant()
+        ;
     }
 
     return (
