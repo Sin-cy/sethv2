@@ -104,9 +104,10 @@ const Works = () => {
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' 
                 >
                     These following projects showcases the skills and experience I have faced
-                    and accomplished both with the help of my mentors and on my own throughout my whole Internship period.
-                    The ability to manage time and projects effectively, at the same time complete them using 
-                    different technologies that requires re-learning ability consistently.
+                    and accomplished with the help of my mentors and through my learning periods.
+                    The ability to manage time and project goals effectively, at the same time complete them using 
+                    different technologies that requires re-learning ability consistently 
+                    taught me a lot of lessons.
                 </motion.p>
 
             </div>
