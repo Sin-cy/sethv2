@@ -26,6 +26,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import gitlab from "./tech/gitlab.png";
+import memegen from "./tech/memegen.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -97,5 +98,5 @@ export {
     cookieconsent,
     webdev,
     frontend,
-
+    memegen,
 };

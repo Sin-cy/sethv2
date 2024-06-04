@@ -36,6 +36,7 @@ import {
     blogspace,
     dashboard, 
     cookieconsent,
+    memegen,
 
 } from "../assets";
 
@@ -224,48 +225,48 @@ const testimonials = [
 ];
 
 const projects = [
-    {
-        name: "Black Jack",
-        description:
-        "A Black Jack game, first project I ever created during my practice for Javascript",
-        tags: [
-            {
-                name : "JavaScript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "HTML",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "CSS",
-                color : "pink-text-gradient"
-            },
-        ],
-        image : blackjack,
-        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/black-jack",
-    },
-    {
-        name: "Counter App",
-        description:
-        "The Counter App was a project I made during my time of practicing Javascript skills with for loops and DOM Manipulations",
-        tags: [
-            {
-                name : "JavaScript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "HTML",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "CSS",
-                color : "pink-text-gradient"
-            },
-        ],
-        image: counterapp,
-        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
-    },
+//    {
+//        name: "Black Jack",
+//        description:
+//        "A Black Jack game, first project I ever created during my practice for Javascript",
+//        tags: [
+//            {
+//                name : "JavaScript",
+//                color : "green-text-gradient"
+//            },
+//            {
+//                name : "HTML",
+//                color : "blue-text-gradient"
+//            },
+//            {
+//                name : "CSS",
+//                color : "pink-text-gradient"
+//            },
+//        ],
+//        image : blackjack,
+//        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/black-jack",
+//    },
+//    {
+//        name: "Counter App",
+//        description:
+//        "The Counter App was a project I made during my time of practicing Javascript skills with for loops and DOM Manipulations",
+//        tags: [
+//            {
+//                name : "JavaScript",
+//                color : "green-text-gradient"
+//            },
+//            {
+//                name : "HTML",
+//                color : "blue-text-gradient"
+//            },
+//            {
+//                name : "CSS",
+//                color : "pink-text-gradient"
+//            },
+//        ],
+//        image: counterapp,
+//        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
+//    },
     {
         name: 'War Game',
         description: 
@@ -373,6 +374,26 @@ const projects = [
         ],
         image: cookieconsent,
         source_code_link : "https://github.com/Sin-cy/js-projects/tree/main/cookieConsent",
+    },
+    {
+        name: "Meme Generator",
+        description : "Generates cat memes by taking in user input selection of choice and filtering through the data.",
+        tags: [
+            {
+                name : "javascript",
+                color : "green-text-gradient"
+            },
+            {
+                name : "html",
+                color : "blue-text-gradient"
+            },
+            {
+                name : "css",
+                color : "blue-text-gradient"
+            },
+        ],
+        image: memegen,
+        source_code_link : "https://github.com/Sin-cy/Meme-Generator",
     },
     {
         name: "Project Time Track",
