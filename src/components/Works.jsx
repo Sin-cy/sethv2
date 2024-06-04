@@ -11,8 +11,20 @@ import { fadeIn , textVariant } from '../utils/motion'
 //be sure all elements passed in as parameters are properly filled
 
 const ProjectCard = ( { index , name , description , tags , image , source_code_link }) => {
+
+    let boxVariants = {};
+
+    const isMobile = window.innerWidth < 768;
+
+    if(!isMobile) {
+        boxVariants = {
+            fadeIn : fadeIn("up", "spring", index * 0.5, 0.75)
+        }
+    }
+
+
   return(
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={boxVariants}>
       <Tilt
         options={{
           max: 45,
@@ -66,35 +78,50 @@ const ProjectCard = ( { index , name , description , tags , image , source_code_
 
 
 const Works = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
 
-      <div className="w-full flex">
-        <motion.p 
-          variants={fadeIn("","",0.1,1)} 
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' 
-        >
-          These following projects showcases the skills and experience I have faced
-          and accomplished both with the help of my mentors and on my own throughout my whole Internship period.
-          The ability to manage time and projects effectively, at the same time complete them using 
-          different technologies that requires re-learning ability consistently.
-        </motion.p>
+    let boxVariant = {};
+    let box2Variant = {};
 
-      </div>
+    const isMobile = window.innerWidth < 768;
 
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project,index) => (
-          <ProjectCard key={`project-${index} `} {...project} index={index} />
-        ))}
+    if(!isMobile) {
+        boxVariant = {
+            fadeIn : fadeIn("","",0.1,1)
+        }
+        box2Variant = {
+            textVariant: textVariant()
+        }
+    }
 
-      </div>
-      
-    </>
-  )
+    return (
+        <>
+            <motion.div variants={box2Variant}>
+                <p className={styles.sectionSubText}>My Work</p>
+                <h2 className={styles.sectionHeadText}>Projects.</h2>
+            </motion.div>
+
+            <div className="w-full flex">
+                <motion.p 
+                    variants={boxVariant} 
+                    className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' 
+                >
+                    These following projects showcases the skills and experience I have faced
+                    and accomplished both with the help of my mentors and on my own throughout my whole Internship period.
+                    The ability to manage time and projects effectively, at the same time complete them using 
+                    different technologies that requires re-learning ability consistently.
+                </motion.p>
+
+            </div>
+
+            <div className="mt-20 flex flex-wrap gap-7">
+                {projects.map((project,index) => (
+                    <ProjectCard key={`project-${index} `} {...project} index={index} />
+                ))}
+
+            </div>
+
+        </>
+    )
 }
 
 export default SectionWrapper(Works , "")
