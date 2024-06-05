@@ -4,30 +4,31 @@ import { About , Contact , Experience , Feedbacks , Hero , Navbar , Tech , Works
 
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
+    return (
+        <BrowserRouter>
+            <div className="relative z-0 bg-primary">
+                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                    <Navbar />
+                    <StarsCanvas />
+                    <Hero />
+                </div>
 
-          <About />
-          <Experience />
-          <Tech />
+                <About />
+                <Experience />
+                <Tech />
 
 
-          <Works />
-          <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-        
+                <Works />
+                <Feedbacks />
+                <div className="relative z-0">
+                    <Contact />
+                    <StarsCanvas />
+                </div>
 
-      </div>
-    </BrowserRouter>
-  )
+
+            </div>
+        </BrowserRouter>
+    )
 }
 
 export default App
