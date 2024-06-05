@@ -6,9 +6,10 @@ import { technologies } from "../constants"
 
 
 const Tech = () => {
-  return (
-    <div>
-            <h2 className="flex flex-row justify-center text-[18px] m-auto my-10">Try using your cursor to rotate these objects 🥶</h2>
+    return (
+        <div>
+            <h2 className="flex flex-row justify-center text-[18px] m-auto my-10">
+                Rotate me ! </h2>
 
             <div className="flex flex-row flex-wrap justify-center gap-10">
                 {technologies.map((technology) => (
@@ -20,8 +21,8 @@ const Tech = () => {
                 ))}
             </div>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default SectionWrapper(Tech , "");
