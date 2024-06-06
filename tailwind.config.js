@@ -19,7 +19,7 @@ export default {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/spaceman-deptheffect.jpeg')",
+        "hero-pattern": "url('/src/assets/herobg.jpeg')",
       },
     },
   },
