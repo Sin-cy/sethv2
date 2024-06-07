@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
+import { Parallax , ParallaxLayer } from '@react-spring/parallax'
 
 
 const ParaHero = () => {
@@ -21,15 +22,41 @@ const ParaHero = () => {
                 </div>
             </div>
 
+            <Parallax pages={1} style={{ top: '0', left: '0' }} class="animation">
 
-            <img className="parallax_heroMainBg" src="./pv3/herobgfinal.png" alt="" />
-            <img className="parallax_rock1" src="./pv3/rock1.png" alt="" />
-            <img className="parallax_rock2" src="./pv3/rock2.png" alt="" />
-            <img className="parallax_rock3" src="./pv3/rock3.png" alt="" />
-            <img className="parallax_baserock" src="./pv3/baserock.png" alt="" />
-            <img className="parallax_toprock" src="./pv3/toprock.png" alt="" />
-            <img className="parallax_character" src="./pv3/character.png" alt="" />
-            <img className="parallax_haloring" src="./pv3/haloring.png" alt="" />
+                <ParallaxLayer offset={0} speed={0.25}>
+                    <div class= "animation_layer parallax " id="heroMainBg"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={3}>
+                    <div class= "animation_layer parallax " id="rock1"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={2.5}>
+                    <div class= "animation_layer parallax" id="rock2"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={0}>
+                    <div class= "animation_layer parallax" id="rock3"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={0}>
+                    <div class= "animation_layer parallax" id="baserock"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={2.5}>
+                    <div class= "animation_layer parallax" id="toprock"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={3.5}>
+                    <div class= "animation_layer parallax" id="character"></div>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0} speed={3.0}>
+                    <div class= "animation_layer parallax" id="haloring"></div>
+                </ParallaxLayer>
+
+            </Parallax>
 
 
             <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
@@ -45,6 +72,8 @@ const ParaHero = () => {
             </div>
 
         </section >
+
+        
     )
 } ;
 

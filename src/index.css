@@ -128,6 +128,51 @@
   transform: translateZ(0);
 }
 
+.animation, .animation_layer {
+    height: 1000px;
+}
+
+.animation {
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.animation_layer {
+    background-position: bottom center;
+    background-size: auto 1030px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+}
+
+.animation_layer.parallax {
+    position: fixed;
+}
+
+#heroMainBg {
+    background-image: url(./pv3/herobgfinal.png);
+}
+
+#rock2 {
+    background-image: url(./pv3/rock2.png);
+}
+#rock3 {
+    background-image: url(./pv3/rock3.png);
+}
+#toprock {
+    background-image: url(./pv3/toprock.png);
+}
+#baserock {
+    background-image: url(./pv3/baserock.png);
+}
+#haloring {
+    background-image: url(./pv3/haloring.png);
+}
+#character {
+    background-image: url(./pv3/character.png);
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

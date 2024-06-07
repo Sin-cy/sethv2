@@ -7,18 +7,20 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import ParaHero from './paraHero';
 
 export {
-  Hero,
-  Navbar,
-  About,
-  Tech,
-  Experience,
-  Works,
-  Feedbacks,
-  Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
-  StarsCanvas
+    Hero,
+    ParaHero,
+    Navbar,
+    About,
+    Tech,
+    Experience,
+    Works,
+    Feedbacks,
+    Contact,
+    EarthCanvas, 
+    BallCanvas, 
+    ComputersCanvas, 
+    StarsCanvas
 }
