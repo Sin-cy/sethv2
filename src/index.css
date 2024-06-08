@@ -128,6 +128,156 @@
   transform: translateZ(0);
 }
 
+.parallax {
+    position: absolute;
+    min-height: 75vh;
+    max-width: 100%;
+    width: 100%;
+    place-items: center;
+    align-items: center;
+    justify-items: center ;
+    display: grid;
+    grid-template-areas: "stack";
+    margin-bottom: 70px;
+    padding-bottom: 10px;
+    border : 2px solid pink;
+}
+
+
+.parallax > * {
+    grid-area: stack;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+.parallax > img {
+    width: 100%;
+    object-fit: cover;
+    height : 95vh;
+
+}
+
+.parallax_heroMainBg {
+    --parallax-speed: 100;
+    z-index: 2;
+}
+
+
+.parallax_rock1 {
+    --parallax-speed: -370;
+    z-index: 3;
+}
+
+.parallax_rock2 {
+    --parallax-speed: -50;
+    z-index: 3;
+}
+
+.parallax_rock3 {
+    --parallax-speed: -230;
+    z-index: 4;
+}
+
+.parallax_baserock {
+    --parallax-speed: 50;
+    z-index: 5;
+}
+
+.parallax_toprock {
+    --parallax-speed: 0;
+    z-index: 5;
+}
+
+.parallax_character {
+    --parallax-speed: -100;
+    z-index: 3;
+
+}
+
+.parallax_haloring {
+    --parallax-speed: 170;
+    z-index: 2;
+}
+
+.parallax_content {
+    --parallax-speed : 210;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.parallax_button {
+    --prallax-speed : 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 1vh));
+  }
+}
+
+@keyframes fade-out {
+    to { opacity: 0; } 
+}
+
+@keyframes header-image-animation {
+    25% { opacity: 1 ;}
+    85%, 100% { opacity: 0 ; scale : 2.5}
+}
+
+
+@supports (animation-timeline: view()) {
+    .parallax {
+        animation: header-image-animation linear forwards;
+        animation-timeline : view();
+        animation-range: exit;
+    }
+    .parallax_heroMainBg {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit ;
+    }
+    .parallax_rock2 {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit -100px ;
+    }
+
+    .parallax_baserock {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit -100px ;
+    }
+
+    .parallax_toprock {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit -100px ;
+    }
+
+    .parallax_character {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit -100px ;
+
+    }
+    .parallax_content {
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range : exit -200px;
+    }
+}
+
+
 @keyframes mulShdSpin {
   0%,
   100% {
