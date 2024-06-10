@@ -173,9 +173,6 @@
 .parallax_rock2 {
     --parallax-speed: 0;
     z-index: 3;
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range : exit -100px ;
 }
 
 .parallax_rock3 {
@@ -191,9 +188,6 @@
 .parallax_toprock {
     --parallax-speed: 0;
     z-index: 5;
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range : exit -100px ;
 }
 
 .parallax_character {
@@ -214,9 +208,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range : exit -200px;
+
     
 }
 
@@ -245,49 +237,31 @@
     85%, 100% { opacity: 0 ; scale : 2.5}
 }
 
-/*
 @supports (animation-timeline: view()) {
     .parallax {
         animation: header-image-animation linear forwards;
         animation-timeline : view();
         animation-range: exit;
     }
-    .parallax_heroMainBg {
-        animation: fade-out linear;
-        animation-timeline: view();
-        animation-range : exit ;
-    }
-    .parallax_rock2 {
+        .parallax_rock2 {
         animation: fade-out linear;
         animation-timeline: view();
         animation-range : exit -100px ;
     }
 
-    .parallax_baserock {
-        animation: fade-out linear;
-        animation-timeline: view();
-        animation-range : exit -100px ;
-    }
-
+    
     .parallax_toprock {
         animation: fade-out linear;
         animation-timeline: view();
         animation-range : exit -100px ;
     }
 
-    .parallax_character {
-        animation: fade-out linear;
-        animation-timeline: view();
-        animation-range : exit -100px ;
-
-    }
-    .parallax_content {
+        .parallax_content {
         animation: fade-out linear;
         animation-timeline: view();
         animation-range : exit -200px;
     }
 }
-*/
 
 @keyframes mulShdSpin {
   0%,
