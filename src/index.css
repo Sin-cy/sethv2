@@ -140,6 +140,9 @@
     grid-template-areas: "stack";
     margin-bottom: 70px;
     padding-bottom: 10px;
+    animation: header-image-animation linear forwards;
+    animation-timeline : view();
+    animation-range: exit;
 }
 
 
@@ -163,13 +166,16 @@
 
 
 .parallax_rock1 {
-    --parallax-speed: -370;
+    --parallax-speed: -470;
     z-index: 3;
 }
 
 .parallax_rock2 {
-    --parallax-speed: -50;
+    --parallax-speed: 0;
     z-index: 3;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range : exit -100px ;
 }
 
 .parallax_rock3 {
@@ -185,6 +191,9 @@
 .parallax_toprock {
     --parallax-speed: 0;
     z-index: 5;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range : exit -100px ;
 }
 
 .parallax_character {
@@ -194,7 +203,7 @@
 }
 
 .parallax_haloring {
-    --parallax-speed: 170;
+    --parallax-speed: 190;
     z-index: 2;
 }
 
@@ -205,6 +214,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range : exit -200px;
     
 }
 
@@ -233,7 +245,7 @@
     85%, 100% { opacity: 0 ; scale : 2.5}
 }
 
-
+/*
 @supports (animation-timeline: view()) {
     .parallax {
         animation: header-image-animation linear forwards;
@@ -275,7 +287,7 @@
         animation-range : exit -200px;
     }
 }
-
+*/
 
 @keyframes mulShdSpin {
   0%,
