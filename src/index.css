@@ -52,7 +52,7 @@
 }
 
 .orange-text-gradient {
-  background: #f12711; /* fallback for old browsers */
+
   background: -webkit-linear-gradient(
     to top,
     #f12711,
@@ -173,8 +173,8 @@
 }
 
 .parallax_rock3 {
-    --parallax-speed: -230;
-    z-index: 4;
+    --parallax-speed: 330;
+    z-index: 6;
 }
 
 .parallax_baserock {
