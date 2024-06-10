@@ -140,9 +140,6 @@
     grid-template-areas: "stack";
     margin-bottom: 70px;
     padding-bottom: 10px;
-    animation: header-image-animation linear forwards;
-    animation-timeline : view();
-    animation-range: exit;
 }
 
 
