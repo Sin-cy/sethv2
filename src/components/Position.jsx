@@ -19,7 +19,7 @@ const Position = () => {
     <div className="relative cursor-default font-medium text-[#facc15] text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] 2xl:text-[66px] leading-[32px] 2xl:leading-[40px] w-full flex justify-center items-center">
       <div className="absolute items-center justify-center flex flex-col">
         <div className="text first absolute flex mt-8" aria-label="Coding Enthusiast">
-          {produceSpans("Coding Enthusiast", "animate-textRotate1")}
+          {produceSpans("Coding Aficionado", "animate-textRotate1")}
         </div>
         <div className="text second absolute flex mt-8" aria-label="Passionate Learner">
           {produceSpans("Passionate Learner", "animate-textRotate2")}
