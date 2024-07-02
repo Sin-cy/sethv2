@@ -51,6 +51,7 @@ import boredbot from "./tech/boredbot.png"
 import blogspace from "./tech/blogspace.png"
 import dashboard from "./tech/dashboard.png"
 import cookieconsent from "./tech/cookieconsent.png"
+import portfolioBg from "./tech/portfolioBg.png"
 
 export {
     logo,
@@ -99,4 +100,5 @@ export {
     webdev,
     frontend,
     memegen,
+    portfolioBg,
 };

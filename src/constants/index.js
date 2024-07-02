@@ -37,6 +37,7 @@ import {
     dashboard, 
     cookieconsent,
     memegen,
+    portfolioBg,
 
 } from "../assets";
 
@@ -268,6 +269,35 @@ const projects = [
 //        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
 //    },
     {
+        name: 'Portfolio',
+        description: 
+        "This is the Portfolio website that you are viewing at this moment. It was built using Vite + React + Tailwind. Other technologies includes Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. I've put a lot of time into this project researching and learning the technologies that I was interested in. I really wanted this portfolio website to be maintainable in the future and ready for new tech.",
+        tags: [
+            {
+                name : "JavaScript",
+                color : "green-text-gradient"
+            },
+            {
+                name : "React",
+                color : "blue-text-gradient"
+            },
+            {
+                name : "Tailwind CSS",
+                color : "blue-text-gradient"
+            },
+            {
+                name : "Three.js",
+                color : "blue-text-gradient"
+            },
+            {
+                name : "Vite",
+                color : "pink-text-gradient"
+            },
+        ],
+        image : portfolioBg,
+        source_code_link: "https://github.com/Sin-cy/Portfolio",
+    },
+    {
         name: 'War Game',
         description: 
         "The First project where I started using other third parties API's and implemented it into a card game",
@@ -357,7 +387,7 @@ const projects = [
     },
     {
         name: "Cookie Consent",
-        description : "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight backgrounda animations.",
+        description : "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight background animations.",
         tags: [
             {
                 name : "javascript",

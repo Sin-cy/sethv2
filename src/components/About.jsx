@@ -41,7 +41,7 @@ const About = () => {
 
       </motion.div>
       <motion.p variants={fadeIn("", "",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-      I am an enthusiastic student embarking on the path of becoming a proficient software developer.
+      I am embarking on the path of becoming a proficient software developer.
       During my tenure at SCB TECH X, a digital enterprise specializing in OPEN APIs and bespoke services for SCB Siam Commercial Bank, 
       I have honed my skills in JavaScript, React, TypeScript, HTML, and CSS both on the Frontend and Backend. 
       My practical experience includes meaningful contributions to a Time Tracking Project, optimizing the workflow for our esteemed software engineering team. 
