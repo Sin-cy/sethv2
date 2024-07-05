@@ -23,7 +23,7 @@ const App = () => {
                     <Feedbacks />
                 </div>
 
-                <div className="relative z-0">
+                <div className="relative z-0 overflow-y-clip">
                     <Contact />
                     <StarsCanvas />
                 </div>

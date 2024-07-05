@@ -128,6 +128,12 @@
   transform: translateZ(0);
 }
 
+html,body {
+    overflow-x: clip;
+    width: 100%;
+    max-width: 100vw;
+}
+
 .parallax {
     position: absolute;
     min-height: 75vh;
@@ -147,6 +153,7 @@
     grid-area: stack;
     animation: parallax linear;
     animation-timeline: scroll();
+    animation-range: 0 250vh;
 }
 
 .parallax > img {
@@ -173,8 +180,9 @@
 }
 
 .parallax_rock3 {
-    --parallax-speed: 330;
+    --parallax-speed: 230;
     z-index: 6;
+    
 }
 
 .parallax_baserock {
@@ -245,8 +253,7 @@
         animation-timeline: view();
         animation-range : exit -100px ;
     }
-
-    
+        
     .parallax_toprock {
         animation: fade-out linear;
         animation-timeline: view();
