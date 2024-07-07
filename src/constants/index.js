@@ -34,11 +34,10 @@ import {
     wargame,
     boredbot,
     blogspace,
-    dashboard, 
+    dashboard,
     cookieconsent,
     memegen,
     portfolioBg,
-
 } from "../assets";
 
 export const navLinks = [
@@ -185,23 +184,23 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-        "He learnt new things pretty quick. I'm sure he could be a great programmer.",
+            "He learnt new things pretty quick. I'm sure he could be a great programmer.",
         name: "( Mix ) Naiprakarn Nakornkhet",
         designation: "Software Engineer",
         company: "SCB Tech X",
-        image: pmix ,
+        image: pmix,
     },
     {
         testimonial:
-        "He has a strong passion for development and consistently pays close attention when learning.",
+            "He has a strong passion for development and consistently pays close attention when learning.",
         name: "( Lek ) Apinun Uppanun",
         designation: "Software Engineer",
         company: "SCB Tech X",
-        image: plek ,
+        image: plek,
     },
     {
         testimonial:
-        "He fits right in quickly and able to deliver any tasks assigned to. I will surely recommend him to any teams.",
+            "He fits right in quickly and able to deliver any tasks assigned to. I will surely recommend him to any teams.",
         name: "( Oddy ) Nawapoom Lohajarernvanich",
         designation: "Software Engineer Manager",
         company: "SCB Tech X",
@@ -209,7 +208,7 @@ const testimonials = [
     },
     {
         testimonial:
-        "He is a good representative who proves that everyone can learn and develop oneself to be a programmer no matter what field you graduated.",
+            "He is a good representative who proves that everyone can learn and develop oneself to be a programmer no matter what field you graduated.",
         name: "( Aom ) Apinya Mokkaraphan",
         designation: "Senior Talent Acquisitions Officer",
         company: "SCB Tech X",
@@ -226,215 +225,86 @@ const testimonials = [
 ];
 
 const projects = [
-//    {
-//        name: "Black Jack",
-//        description:
-//        "A Black Jack game, first project I ever created during my practice for Javascript",
-//        tags: [
-//            {
-//                name : "JavaScript",
-//                color : "green-text-gradient"
-//            },
-//            {
-//                name : "HTML",
-//                color : "blue-text-gradient"
-//            },
-//            {
-//                name : "CSS",
-//                color : "pink-text-gradient"
-//            },
-//        ],
-//        image : blackjack,
-//        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/black-jack",
-//    },
-//    {
-//        name: "Counter App",
-//        description:
-//        "The Counter App was a project I made during my time of practicing Javascript skills with for loops and DOM Manipulations",
-//        tags: [
-//            {
-//                name : "JavaScript",
-//                color : "green-text-gradient"
-//            },
-//            {
-//                name : "HTML",
-//                color : "blue-text-gradient"
-//            },
-//            {
-//                name : "CSS",
-//                color : "pink-text-gradient"
-//            },
-//        ],
-//        image: counterapp,
-//        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
-//    },
+    //    {
+    //        name: "Black Jack",
+    //        description:
+    //        "A Black Jack game, first project I ever created during my practice for Javascript",
+    //        tags: [
+    //            {
+    //                name : "JavaScript",
+    //                color : "green-text-gradient"
+    //            },
+    //            {
+    //                name : "HTML",
+    //                color : "blue-text-gradient"
+    //            },
+    //            {
+    //                name : "CSS",
+    //                color : "pink-text-gradient"
+    //            },
+    //        ],
+    //        image : blackjack,
+    //        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/black-jack",
+    //    },
+    //    {
+    //        name: "Counter App",
+    //        description:
+    //        "The Counter App was a project I made during my time of practicing Javascript skills with for loops and DOM Manipulations",
+    //        tags: [
+    //            {
+    //                name : "JavaScript",
+    //                color : "green-text-gradient"
+    //            },
+    //            {
+    //                name : "HTML",
+    //                color : "blue-text-gradient"
+    //            },
+    //            {
+    //                name : "CSS",
+    //                color : "pink-text-gradient"
+    //            },
+    //        ],
+    //        image: counterapp,
+    //        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
+    //    },
     {
-        name: 'Portfolio',
-        description: 
-        "This is the Portfolio website that you are viewing at this moment. It was built using Vite + React + Tailwind. Other technologies includes Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. I've put a lot of time into this project researching and learning the technologies that I was interested in. I really wanted this portfolio website to be maintainable in the future and ready for new tech.",
-        tags: [
-            {
-                name : "JavaScript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "React",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "Tailwind CSS",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "Three.js",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "Vite",
-                color : "pink-text-gradient"
-            },
-        ],
-        image : portfolioBg,
-        source_code_link: "https://github.com/Sin-cy/Portfolio",
-    },
-    {
-        name: 'War Game',
-        description: 
-        "The First project where I started using other third parties API's and implemented it into a card game",
-        tags: [
-            {
-                name : "JavaScript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "HTML",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "CSS",
-                color : "pink-text-gradient"
-            },
-        ],
-        image : wargame,
-        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/APIs/AsyncJS/src",
-    },
-    {
-        name: "Bored Bot Idea Generator",
+        name: "Portfolio",
         description:
-        "Another Project that implements an API into the code to create and generate random ideas for the user by providing a button. When clicks, generate random ideas :)",
+            "This is the Portfolio website that you are viewing at this moment. It was built using Vite + React + Tailwind. Other technologies includes Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. I've put a lot of time into this project researching and learning the technologies that I was interested in. I really wanted this portfolio website to be maintainable in the future and ready for new tech.",
         tags: [
             {
-                name : "javascript",
-                color : "green-text-gradient"
+                name: "JavaScript",
+                color: "green-text-gradient",
             },
             {
-                name : "html",
-                color : "blue-text-gradient"
+                name: "React",
+                color: "blue-text-gradient",
             },
             {
-                name : "css",
-                color : "pink-text-gradient"
+                name: "Tailwind CSS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Three.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Vite",
+                color: "pink-text-gradient",
             },
         ],
-        image: boredbot,
-        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/APIs/Intro/src",
-    },
-    {
-        name: "Blog Space",
-        description: 
-        "Another one of my JavaScipt projects that utilizes the use of API to create a Place where people can come in and post blogs about anything. Posted blogs will be saved daily.",
-        tags: [
-            {
-                name : "javascript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "html",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "css",
-                color : "pink-text-gradient"
-            },
-            {
-                name : "REST",
-                color : "green-text-gradient",
-            },
-        ],
-        image: blogspace,
-        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/APIs/REST/src",
-    },
-    {
-        name: "Dashboard",
-        description :
-        "This Project uses the OpenWeather API, CrytoCurrency API and also a background wallpaper API to create a Dashboard that has a live current time update + current weather according to your location.",
-        tags: [
-            {
-                name : "javascript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "html",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "css",
-                color : "pink-text-gradient"
-            },
-        ],
-        image: dashboard,
-        source_code_link : "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
-    },
-    {
-        name: "Cookie Consent",
-        description : "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight background animations.",
-        tags: [
-            {
-                name : "javascript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "html",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "css",
-                color : "pink-text-gradient"
-            },
-        ],
-        image: cookieconsent,
-        source_code_link : "https://github.com/Sin-cy/js-projects/tree/main/cookieConsent",
-    },
-    {
-        name: "Meme Generator",
-        description : "Generates cat memes by taking in user input selection of choice and filtering through the data.",
-        tags: [
-            {
-                name : "javascript",
-                color : "green-text-gradient"
-            },
-            {
-                name : "html",
-                color : "blue-text-gradient"
-            },
-            {
-                name : "css",
-                color : "blue-text-gradient"
-            },
-        ],
-        image: memegen,
-        source_code_link : "https://github.com/Sin-cy/Meme-Generator",
+        image: portfolioBg,
+        source_code_link: "https://github.com/Sin-cy/Portfolio",
     },
     {
         name: "Project Time Track",
         description:
-        "This project was developed to offer a streamlined view and efficient routine tracking of team members, project tasks, status updates, efforts, and sprint progress. Additionally, it includes a feature for rapid estimation of effort points required for both Developers and Quality Assurance teams to focus on specific tasks or projects.",
+            "This project was developed to offer a streamlined view and efficient routine tracking of team members, project tasks, status updates, efforts, and sprint progress. Additionally, it includes a feature for rapid estimation of effort points required for both Developers and Quality Assurance teams to focus on specific tasks or projects.",
 
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
-
             },
             {
                 name: "typescript",
@@ -451,6 +321,141 @@ const projects = [
         ],
         image: projecttimesheet,
         // source_code_link: "https://github.com/",
+    },
+    {
+        name: "War Game",
+        description:
+            "The First project where I started using other third parties API's and implemented it into a card game",
+        tags: [
+            {
+                name: "JavaScript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: wargame,
+        source_code_link:
+            "https://github.com/Sin-cy/js-projects/tree/main/APIs/AsyncJS/src",
+    },
+    {
+        name: "Bored Bot Idea Generator",
+        description:
+            "Another Project that implements an API into the code to create and generate random ideas for the user by providing a button. When clicks, generate random ideas :)",
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: boredbot,
+        source_code_link:
+            "https://github.com/Sin-cy/js-projects/tree/main/APIs/Intro/src",
+    },
+    {
+        name: "Blog Space",
+        description:
+            "Another one of my JavaScipt projects that utilizes the use of API to create a Place where people can come in and post blogs about anything. Posted blogs will be saved daily.",
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "REST",
+                color: "green-text-gradient",
+            },
+        ],
+        image: blogspace,
+        source_code_link:
+            "https://github.com/Sin-cy/js-projects/tree/main/APIs/REST/src",
+    },
+    {
+        name: "Dashboard",
+        description:
+            "This Project uses the OpenWeather API, CrytoCurrency API and also a background wallpaper API to create a Dashboard that has a live current time update + current weather according to your location.",
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: dashboard,
+        source_code_link:
+            "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
+    },
+    {
+        name: "Cookie Consent",
+        description:
+            "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight background animations.",
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cookieconsent,
+        source_code_link:
+            "https://github.com/Sin-cy/js-projects/tree/main/cookieConsent",
+    },
+    {
+        name: "Meme Generator",
+        description:
+            "Generates cat memes by taking in user input selection of choice and filtering through the data.",
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: memegen,
+        source_code_link: "https://github.com/Sin-cy/Meme-Generator",
     },
     // {
     //   name: "Job IT",
