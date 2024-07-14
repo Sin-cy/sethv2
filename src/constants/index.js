@@ -1,6 +1,6 @@
 import {
-    mobile,
     backend,
+    mobile,
     creator,
     web,
     webdev,
@@ -38,6 +38,8 @@ import {
     cookieconsent,
     memegen,
     portfolioBg,
+    passgen,
+    addtocart,
 } from "../assets";
 
 export const navLinks = [
@@ -133,7 +135,7 @@ const experiences = [
         iconBg: "#383E56",
         date: "June 2023 - September 2023",
         points: [
-            "Developing internal web module using React.js, TypeScript and other technologies such as Ant Design Components",
+            "Developing internal web module using React, TypeScript and other technologies such as Ant Design Components",
             "Part of a vital aspect of our internal Time Tracking Project, designed to seamlessly monitor work progress, sprint activities, and project statuses for our esteemed Software Engineering Team.",
             "Integrating APIs and Backend services into Time Sheet Projects.",
             "Collaborating with teams including system analyst, quality assurance, product managers, and other developers to create high-quality products for clients.",
@@ -270,7 +272,11 @@ const projects = [
     {
         name: "Portfolio",
         description:
-            "This is the Portfolio website that you are viewing at this moment. It was built using Vite + React + Tailwind. Other technologies includes Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. I've put a lot of time into this project researching and learning the technologies that I was interested in. I really wanted this portfolio website to be maintainable in the future and ready for new tech.",
+            `This is the Portfolio website that you are viewing at this moment. 
+            It was built using Vite + React + Tailwind. Other technologies includes 
+            Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. 
+            I've put a lot of time into this project researching and learning the technologies that I was interested in. 
+            I really wanted this portfolio website to be maintainable in the future and ready for new tech.`,
         tags: [
             {
                 name: "JavaScript",
@@ -292,6 +298,10 @@ const projects = [
                 name: "Vite",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Framer Motion",
+                color: "blue-text-gradient",
+            },
         ],
         image: portfolioBg,
         source_code_link: "https://github.com/Sin-cy/Portfolio",
@@ -299,8 +309,12 @@ const projects = [
     {
         name: "Project Time Track",
         description:
-            "This project was developed to offer a streamlined view and efficient routine tracking of team members, project tasks, status updates, efforts, and sprint progress. Additionally, it includes a feature for rapid estimation of effort points required for both Developers and Quality Assurance teams to focus on specific tasks or projects.",
-
+        `I had an opportunity to work on this project during my internship period.
+        The Project was developed to offer a streamlined view and efficient routine tracking 
+        of team members, project tasks, status updates, efforts, and sprint progress. 
+        Additionally, it includes a feature for estimating effort points required for all teams to focus on specific tasks or projects.
+        This project pushed me to learn more about React, Ant Design, TypeScript, Data Structures and how to manage a project on a larger scale
+        with the use of databases like MongoDB and Backend server side such as Express.`,
         tags: [
             {
                 name: "react",
@@ -318,9 +332,62 @@ const projects = [
                 name: "ant-design",
                 color: "pink-text-gradient",
             },
+            {
+                name: "express",
+                color: "green-text-gradient",
+            },
         ],
         image: projecttimesheet,
         // source_code_link: "https://github.com/",
+    },
+
+    {
+        name: "Password Generator",
+        description:
+            `Generates two random password. User can click on the password to copy to clipboard.
+            This project taught me some new ways to generate random characters rather than using Math.radom().
+            When I first started out this project, I used Math.random() to generate random characters 
+            but the more I understood methods, the more I was able to implement it here by refactoring the whole project.`,
+        tags: [
+            {
+                name: "JavaScript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: passgen,
+        source_code_link:
+            "https://github.com/Sin-cy/password-gen.git",
+    },
+    {
+        name: "Cookie Consent",
+        description:
+        `This project mainly focuses on CSS, however with further researching, I implemented a javascript code 
+        to create background animation using logic and box sizes to create on mouse move highlight background animations.`,
+        tags: [
+            {
+                name: "javascript",
+                color: "green-text-gradient",
+            },
+            {
+                name: "html",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cookieconsent,
+        source_code_link:
+        "https://github.com/Sin-cy/cookie-consent.git",
     },
     {
         name: "War Game",
@@ -366,32 +433,32 @@ const projects = [
         source_code_link:
             "https://github.com/Sin-cy/js-projects/tree/main/APIs/Intro/src",
     },
-    {
-        name: "Blog Space",
-        description:
-            "Another one of my JavaScipt projects that utilizes the use of API to create a Place where people can come in and post blogs about anything. Posted blogs will be saved daily.",
-        tags: [
-            {
-                name: "javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "REST",
-                color: "green-text-gradient",
-            },
-        ],
-        image: blogspace,
-        source_code_link:
-            "https://github.com/Sin-cy/js-projects/tree/main/APIs/REST/src",
-    },
+    // {
+    //     name: "Blog Space",
+    //     description:
+    //         "Another one of my JavaScipt projects that utilizes the use of API to create a Place where people can come in and post blogs about anything. Posted blogs will be saved daily.",
+    //     tags: [
+    //         {
+    //             name: "javascript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "REST",
+    //             color: "green-text-gradient",
+    //         },
+    //     ],
+    //     image: blogspace,
+    //     source_code_link:
+    //         "https://github.com/Sin-cy/js-projects/tree/main/APIs/REST/src",
+    // },
     {
         name: "Dashboard",
         description:
@@ -415,28 +482,6 @@ const projects = [
             "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
     },
     {
-        name: "Cookie Consent",
-        description:
-            "This project mainly focuses on CSS, however with further researching, I implemented a javascript code to create background animation using logic and box sizes to create on mouse move highlight background animations.",
-        tags: [
-            {
-                name: "javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: cookieconsent,
-        source_code_link:
-            "https://github.com/Sin-cy/js-projects/tree/main/cookieConsent",
-    },
-    {
         name: "Meme Generator",
         description:
             "Generates cat memes by taking in user input selection of choice and filtering through the data.",
@@ -457,28 +502,7 @@ const projects = [
         image: memegen,
         source_code_link: "https://github.com/Sin-cy/Meme-Generator",
     },
-    // {
-    //   name: "Job IT",
-    //   description:
-    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    //   tags: [
-    //     {
-    //       name: "react",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "restapi",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "scss",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: jobit,
-    //   source_code_link: "https://github.com/",
-    // },
-    // {
+        // {
     //   name: "Trip Guide",
     //   description:
     //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",

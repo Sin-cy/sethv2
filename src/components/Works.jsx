@@ -104,10 +104,8 @@ const Works = () => {
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' 
                 >
                     These following projects showcases the skills and experience I have faced
-                    and accomplished with the help of my mentors and through my learning periods.
-                    The ability to manage time and project goals effectively, at the same time complete them using 
-                    different technologies that requires re-learning ability consistently 
-                    taught me a lot of lessons.
+                    and accomplished with the help of my mentors during internship and through my own learning periods.
+                    Link to Github repositories are available on each project cards shown below.
                 </motion.p>
 
             </div>

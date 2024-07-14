@@ -52,6 +52,8 @@ import blogspace from "./tech/blogspace.png"
 import dashboard from "./tech/dashboard.png"
 import cookieconsent from "./tech/cookieconsent.png"
 import portfolioBg from "./tech/portfolioBg.png"
+import passgen from "./tech/passgen.png"
+import addtocart from "./tech/addtocart.png"
 
 export {
     logo,
@@ -101,4 +103,6 @@ export {
     frontend,
     memegen,
     portfolioBg,
+    passgen,
+    addtocart,
 };
