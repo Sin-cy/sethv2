@@ -344,7 +344,7 @@ const projects = [
     {
         name: "Password Generator",
         description:
-            `Generates two random password. User can click on the password to copy to clipboard.
+            `Generates a random password. User can click to copy to clipboard.
             This project taught me some new ways to generate random characters rather than using Math.radom().
             When I first started out this project, I used Math.random() to generate random characters 
             but the more I understood methods, the more I was able to implement it here by refactoring the whole project.`,
