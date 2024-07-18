@@ -16,7 +16,7 @@ const produceSpans = (text, animation) => {
 
 const Position = () => {
   return (
-    <div className="relative cursor-default font-medium text-[#facc15] text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] 2xl:text-[66px] leading-[32px] 2xl:leading-[40px] w-full flex justify-center items-center">
+    <div className="relative cursor-default font-medium text-[#facc15] text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] xl:text-[42px] 2xl:text-[50px] leading-[32px] 2xl:leading-[40px] w-full flex justify-center items-center">
       <div className="absolute items-center justify-center flex flex-col">
         <div className="text first absolute flex mt-8" aria-label="Coding Enthusiast">
           {produceSpans("Computational Virtuoso", "animate-textRotate1")}
