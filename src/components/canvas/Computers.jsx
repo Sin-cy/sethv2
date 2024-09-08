@@ -5,6 +5,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+// NOTE: galaxy_pc folder in use, this one imports milky way galaxy 3d model
+
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./galaxy_pc/scene.gltf");
 

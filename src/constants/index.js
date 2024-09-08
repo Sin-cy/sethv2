@@ -176,7 +176,7 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Portfolio",
+        name: "Seth v2",
         description:
             `This portfolio website was built using Vite, React, Tailwind, Framer Motion, CSS animations, and Three.js for animations. I invested significant time researching and learning these technologies to ensure the site is maintainable and adaptable for future updates.`,
         tags: [
@@ -305,28 +305,28 @@ const projects = [
         source_code_link:
             "https://github.com/Sin-cy/js-projects/tree/main/APIs/AsyncJS/src",
     },
-    {
-        name: "Bored Bot Idea Generator",
-        description:
-            "Another Project that implements an API into the code to create and generate random ideas for the user by providing a button. When clicks, generate random ideas :)",
-        tags: [
-            {
-                name: "javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: boredbot,
-        source_code_link:
-            "https://github.com/Sin-cy/js-projects/tree/main/APIs/Intro/src",
-    },
+    // {
+    //     name: "Bored Bot Idea Generator",
+    //     description:
+    //         "Another Project that implements an API into the code to create and generate random ideas for the user by providing a button. When clicks, generate random ideas :)",
+    //     tags: [
+    //         {
+    //             name: "javascript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: boredbot,
+    //     source_code_link:
+    //         "https://github.com/Sin-cy/js-projects/tree/main/APIs/Intro/src",
+    // },
     // {
     //     name: "Blog Space",
     //     description:
@@ -375,27 +375,27 @@ const projects = [
         source_code_link:
             "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
     },
-    {
-        name: "Meme Generator",
-        description:
-            "Generates cat memes by taking in user input selection of choice and filtering through the data.",
-        tags: [
-            {
-                name: "javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: memegen,
-        source_code_link: "https://github.com/Sin-cy/Meme-Generator",
-    },
+    // {
+    //     name: "Meme Generator",
+    //     description:
+    //         "Generates cat memes by taking in user input selection of choice and filtering through the data.",
+    //     tags: [
+    //         {
+    //             name: "javascript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: memegen,
+    //     source_code_link: "https://github.com/Sin-cy/Meme-Generator",
+    // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

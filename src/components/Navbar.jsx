@@ -8,7 +8,7 @@ import { faMugHot, faHouse } from '@fortawesome/free-solid-svg-icons'; // Import
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { menu , close , mylogo } from '../assets'
+import { menu , close } from '../assets'
 import DockDemo from './DockDemo'
 
 const Navbar = () => {
@@ -43,7 +43,6 @@ const Navbar = () => {
                             <span className='text-[#facc15] text-[18px] sm:block ml-2 hidden'></span>
                         </p>
 
-                        {/* <img src={mylogo} alt="mylogo" className='w-15 h-9 object-contain'/> */}
                     </Link>
                     <ul className='list-none hidden sm:flex flex-row gap-3'>
                         {navLinks.map((Link) => (

@@ -1,11 +1,7 @@
 //All logo and png , svgs are imported and exported in here first
 
 
-import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import webdev from "./webdev.png"
 import frontend from "./frontend.png"
 import github from "./github.png";
@@ -29,16 +25,7 @@ import gitlab from "./tech/gitlab.png";
 import memegen from "./tech/memegen.png"
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import techx from "./company/techx.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import mylogo from "./mylogo.svg"
-
 import pmix from "./company/pmix.png"
 import plek from "./company/plek.png"
 import poddy from "./company/poddy.png"
@@ -56,11 +43,7 @@ import passgen from "./tech/passgen.png"
 import addtocart from "./tech/addtocart.png"
 
 export {
-    logo,
     backend,
-    creator,
-    mobile,
-    web,
     github,
     menu,
     close,
@@ -78,13 +61,6 @@ export {
     typescript,
     threejs,
     meta,
-    shopify,
-    starbucks,
-    tesla,
-    carrent,
-    jobit,
-    tripguide,
-    mylogo,
     techx,
     gitlab,
     pmix,

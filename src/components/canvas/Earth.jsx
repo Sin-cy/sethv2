@@ -5,6 +5,7 @@ import { OrbitControls, Preload , useGLTF } from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
 
+// NOTE:  planet folder in use do not delete
 const Earth = () => {
   const earth = useGLTF('./planet/scene.gltf')
 
