@@ -5,7 +5,8 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn , textVariant } from '../utils/motion'
-
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text"
+import { cn } from "@/lib/utils";
 //data of the projects are in the file constants
 //Note that the data of the project can be changed in the constants file
 //be sure all elements passed in as parameters are properly filled
@@ -20,17 +21,16 @@ const ProjectCard = ( { index , name , description , tags , image , source_code_
         boxVariants = fadeIn("up", "spring", index * 0.5, 0.75)
         //fadeIn : fadeIn("up", "spring", index * 0.5, 0.75)
     }
-
-
     return(
         <motion.div variants={boxVariants}>
             <Tilt
                 options={{
-                    max: 30,
+                    max: 7,
                     scale: 1,
-                    speed: 300,
+                    speed: 0,
                 }}
-                className="bg-[#172554] hover:bg-blue-800 p-5 rounded-2xl sm:w-[360px] w-full"
+                // bg-[#172554]
+                className="  bg-neutral-500/10 hover:bg-neutral-600/10 p-5 rounded-2xl sm:w-[360px] w-full"
             >
                 <div className="relative w-full h-[230px]">
                     <img 
@@ -68,6 +68,18 @@ const ProjectCard = ( { index , name , description , tags , image , source_code_
 
                 </div>
 
+                <button
+                    onClick={() => window.open(source_code_link, "_blank")}
+                    className="mt-4 bg-neutral-500/25 backdrop-blur-md hover:text-teal-300 hover:bg-black text-white py-2 px-3 rounded-md flex items-center justify-center"
+                >
+                    <img 
+                        src={github}
+                        alt="github"
+                        className="w-5 h-5 mr-2"
+                    />
+                    GitHub
+                </button>
+
             </Tilt>
         </motion.div>
     )
@@ -94,7 +106,16 @@ const Works = () => {
     return (
         <>
             <motion.div variants={box2Variant}>
-                <p className={styles.sectionSubText}>My Work</p>
+                <div
+                    className={cn(
+                        "inline-block py-1 px-3 group rounded-full border border-white bg-neutral-50 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-950 dark:hover:bg-neutral-950",
+                    )}
+                >
+                    <AnimatedShinyText className={`${styles.sectionSubText} font-semibold text-lg`}>
+                        My Work
+                    </AnimatedShinyText>
+                </div>
+                {/* <p className={styles.sectionSubText}>My Work</p> */}
                 <h2 className={styles.sectionHeadText}>Projects</h2>
             </motion.div>
 
@@ -114,7 +135,6 @@ const Works = () => {
                 {projects.map((project,index) => (
                     <ProjectCard key={`project-${index} `} {...project} index={index} />
                 ))}
-
             </div>
 
         </>

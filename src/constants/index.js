@@ -1,8 +1,5 @@
 import {
     backend,
-    mobile,
-    creator,
-    web,
     webdev,
     frontend,
     javascript,
@@ -15,12 +12,6 @@ import {
     mongodb,
     git,
     figma,
-    meta,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     techx,
     gitlab,
@@ -146,45 +137,6 @@ const experiences = [
             "Participating in other projects responsible for Gateway management and Onboarding Open APIs integration using Postman, CA Portal, SQL and etc.",
         ],
     },
-    // {
-    //   title: "React Native Developer",
-    //   company_name: "Tesla",
-    //   icon: tesla,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2021 - Feb 2022",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Shopify",
-    //   icon: shopify,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Full stack Developer",
-    //   company_name: "Meta",
-    //   icon: meta,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2023 - Present",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
 ];
 
 const testimonials = [
@@ -220,67 +172,13 @@ const testimonials = [
         company: "SCB Tech X",
         image: paom,
     },
-    // {
-    //   testimonial:
-    //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    //   name: "Lisa Wang",
-    //   designation: "CTO",
-    //   company: "456 Enterprises",
-    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-    // },
 ];
 
 const projects = [
-    //    {
-    //        name: "Black Jack",
-    //        description:
-    //        "A Black Jack game, first project I ever created during my practice for Javascript",
-    //        tags: [
-    //            {
-    //                name : "JavaScript",
-    //                color : "green-text-gradient"
-    //            },
-    //            {
-    //                name : "HTML",
-    //                color : "blue-text-gradient"
-    //            },
-    //            {
-    //                name : "CSS",
-    //                color : "pink-text-gradient"
-    //            },
-    //        ],
-    //        image : blackjack,
-    //        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/black-jack",
-    //    },
-    //    {
-    //        name: "Counter App",
-    //        description:
-    //        "The Counter App was a project I made during my time of practicing Javascript skills with for loops and DOM Manipulations",
-    //        tags: [
-    //            {
-    //                name : "JavaScript",
-    //                color : "green-text-gradient"
-    //            },
-    //            {
-    //                name : "HTML",
-    //                color : "blue-text-gradient"
-    //            },
-    //            {
-    //                name : "CSS",
-    //                color : "pink-text-gradient"
-    //            },
-    //        ],
-    //        image: counterapp,
-    //        source_code_link: "https://github.com/Sin-cy/js-projects/tree/main/counter-app",
-    //    },
     {
         name: "Portfolio",
         description:
-            `This is the Portfolio website that you are viewing at this moment. 
-            It was built using Vite + React + Tailwind. Other technologies includes 
-            Framermotions,CSS Animations and Three.js that was implemented and put together for animation purposes. 
-            I've put a lot of time into this project researching and learning the technologies that I was interested in. 
-            I really wanted this portfolio website to be maintainable in the future and ready for new tech.`,
+            `This portfolio website was built using Vite, React, Tailwind, Framer Motion, CSS animations, and Three.js for animations. I invested significant time researching and learning these technologies to ensure the site is maintainable and adaptable for future updates.`,
         tags: [
             {
                 name: "JavaScript",
@@ -313,12 +211,7 @@ const projects = [
     {
         name: "Project Time Track",
         description:
-        `I had an opportunity to work on this project during my internship period.
-        The Project was developed to offer a streamlined view and efficient routine tracking 
-        of team members, project tasks, status updates, efforts, and sprint progress. 
-        Additionally, it includes a feature for estimating effort points required for all teams to focus on specific tasks or projects.
-        This project pushed me to learn more about React, Ant Design, TypeScript, Data Structures and how to manage a project on a larger scale
-        with the use of databases like MongoDB and Backend server side such as Express.`,
+        `During my internship, I worked on a project designed for tracking team routines, tasks, status updates, efforts, and sprint progress. It also featured an effort estimation tool for task prioritization. This project helped me deepen my knowledge of React, Ant Design, TypeScript, data structures, and project management with MongoDB and Express.`,
         tags: [
             {
                 name: "react",
@@ -348,10 +241,7 @@ const projects = [
     {
         name: "Password Generator",
         description:
-            `Generates a random password. User can click to copy to clipboard.
-            This project taught me some new ways to generate random characters rather than using Math.radom().
-            When I first started out this project, I used Math.random() to generate random characters 
-            but the more I understood methods, the more I was able to implement it here by refactoring the whole project.`,
+            `This project generates a random password, with a click-to-copy feature. Initially, I used Math.random(), but as I learned better methods, I refactored the code to improve the random character generation process.`,
         tags: [
             {
                 name: "JavaScript",
@@ -506,27 +396,6 @@ const projects = [
         image: memegen,
         source_code_link: "https://github.com/Sin-cy/Meme-Generator",
     },
-        // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

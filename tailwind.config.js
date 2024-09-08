@@ -30,10 +30,25 @@ export default {
                     '0%, 40%': { transform: 'translate3d(0, 100%, 0) rotateX(-90deg)' },
                     '60%, 100%': { transform: 'translate3d(0, 0%, 0) rotateX(0deg)' },
                 },
+                shimmer: {
+                    "0%, 90%, 100%": {
+                        "background-position": "calc(-100% - var(--shimmer-width)) 0",
+                    },
+                    "30%, 60%": {
+                        "background-position": "calc(100% + var(--shimmer-width)) 0",
+                    },
+                },
+                gradient: {
+                    to: {
+                        backgroundPosition: "var(--bg-size) 0",
+                    },
+                },
             },
             animation: {
                 textRotate1: 'textRotate1 2.4s infinite alternate',
                 textRotate2: 'textRotate2 2.4s infinite alternate',
+                shimmer: "shimmer 8s infinite",
+                gradient: "gradient 8s linear infinite",
             },
             fontSize: {
                 title: '2rem',
