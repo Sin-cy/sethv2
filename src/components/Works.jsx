@@ -124,9 +124,8 @@ const Works = () => {
                     variants={boxVariant} 
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]' 
                 >
-                    These following projects showcases the skills and experience I have faced
-                    and accomplished with the help of my mentors during internship and through my own learning periods.
-                    Link to Github repositories are available on each project cards shown below.
+                    These are some of my projects that I spent time on solely to explore, improve ,learn and repeat.
+                    Here are some of my favorites ones.
                 </motion.p>
 
             </div>

@@ -42,14 +42,10 @@ const About = () => {
 
             </motion.div>
             <motion.p variants={fadeIn("", "",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-                I am on the path of becoming a proficient software developer.
-                During my time at SCB TECH X, a digital enterprise specializing in OPEN APIs and services for SCB Siam Commercial Bank, 
-                I have enhanced my skills in JavaScript, React, TypeScript, HTML, and CSS both on the Frontend and Backend. 
-                My practical experience includes meaningful contributions to a Time Tracking Project, optimizing the workflow for our esteemed software engineering team. 
-                Additionally, I have actively participated in projects involving Onboarding APIs and Company Gateways. My approach is characterized 
-                by a keen aptitude for rapid assimilation of new concepts and a proactive stance towards challenging assignments. 
-                I eagerly anticipate the opportunity to channel my problem-solving skills and creative mindset 
-                to bring new Ideas to life at the same time constantly improve myself.
+                My journey began in 2022 while studying Avionics Engineering and found passion for programming and technology. Since then, 
+                I've been dedicated to honing my skills and by building as many projects as I can.
+                Alongside coding, I create content around tech, productivity, sharing my experiences as I navigate the world of development.
+                Explore my work and join me as I continue to grow and push the boundaries of what's possible in tech.
 
             </motion.p>
 
