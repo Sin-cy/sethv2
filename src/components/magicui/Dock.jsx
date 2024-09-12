@@ -3,13 +3,13 @@ import { cva } from "class-variance-authority";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const DEFAULT_MAGNIFICATION = 60;
+const DEFAULT_MAGNIFICATION = 50;
 const DEFAULT_DISTANCE = 140;
 const MOBILE_MAGNIFICATION = 40;
 const MOBILE_DISTANCE = 80;
 
 const dockVariants = cva(
-    "mx-auto w-max mt-0 h-[46px] p-2 flex gap-3 rounded-2xl border supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 backdrop-blur-md",
+    "mx-auto w-max mt-0 h-[46px] p-2 flex gap-2 rounded-2xl border supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 backdrop-blur-md",
 );
 
 const Dock = React.forwardRef(
