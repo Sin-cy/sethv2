@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 // import { technologies } from "@/constants"
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+// import { Separator } from "@/components/ui/separator";
 import {
     Tooltip,
     TooltipContent,
@@ -16,10 +16,17 @@ import { Dock, DockIcon } from "@/components/magicui/Dock";
 // import ModeToggle from "@/components/ui/mode-toggle";
 
 const Icons = {
+    home: (props) => <HomeIcon width={19} height={19} {...props} />,
     calendar: (props) => <CalendarIcon {...props} />,
     email: (props) => <MailIcon {...props} />,
     linkedin: (props) => (
-        <svg viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <svg
+            viewBox="0 0 24 24"
+            width="16px"
+            height="16px"
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}
+        >
             <title>LinkedIn</title>
             <path
                 fill="currentColor"
@@ -28,7 +35,13 @@ const Icons = {
         </svg>
     ),
     x: (props) => (
-        <svg viewBox="0 0 24 24" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <svg
+            viewBox="0 0 24 24"
+            width="20px"
+            height="20px"
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}
+        >
             <title>X</title>
             <path
                 fill="currentColor"
@@ -38,8 +51,8 @@ const Icons = {
     ),
     youtube: (props) => (
         <svg
-            width="26px"
-            height="26px"
+            width="20px"
+            height="20px"
             viewBox="0 0 30 30"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,10 +63,10 @@ const Icons = {
         </svg>
     ),
     github: (props) => (
-        <svg 
-            viewBox="0 0 438.549 438.549" 
-            width="20px" 
-            height="20px"
+        <svg
+            viewBox="0 0 438.549 438.549"
+            width="17px"
+            height="17px"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
@@ -65,11 +78,11 @@ const Icons = {
         </svg>
     ),
     instagram: (props) => (
-        <svg 
-            width="24px" 
-            height="24px" 
-            viewBox="0 0 24 24" 
-            role="img" 
+        <svg
+            width="18px"
+            height="18px"
+            viewBox="0 0 24 24"
+            role="img"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
@@ -78,13 +91,12 @@ const Icons = {
                 d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
             />
         </svg>
-
     ),
 };
 
-const DATA = {
+const dockDatas = {
     navbar: [
-        { href: "#", icon: HomeIcon, label: "Home" },
+        { href: "#", icon: Icons.home, label: "Home" },
         // { href: "#", icon: PencilIcon, label: "Blog" },
     ],
     contact: {
@@ -121,18 +133,20 @@ const DATA = {
 const DockDemo = () => {
     return (
         <div className="relative mt-0 flex h-[65px] sm:h-[50px] w-[80%] max-w-[400px] mx-auto flex-col items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl">
-            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-            </span>
+            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"></span>
             <TooltipProvider>
-                <Dock direction="middle" >
-                    {DATA.navbar.map((item) => (
+                <Dock direction="middle">
+                    {dockDatas.navbar.map((item) => (
                         <DockIcon key={item.label}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <Link
                                         href={item.href}
                                         className={cn(
-                                            buttonVariants({ variant: "ghost", size: "icon" }),
+                                            buttonVariants({
+                                                variant: "ghost",
+                                                size: "icon",
+                                            }),
                                             "size-12 rounded-full ",
                                         )}
                                         onClick={() => {
@@ -149,29 +163,35 @@ const DockDemo = () => {
                         </DockIcon>
                     ))}
                     <hr className="mx-2 h-5 w-[1px] shrink-0 bg-gray-300" />
-                    <Separator orientation="vertical" className="h-full" />
-                    {Object.entries(DATA.contact.social).map(([name, social]) => (
-                        <DockIcon key={name}>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <a
-                                        href={social.url}
-                                        className={cn(
-                                            buttonVariants({ variant: "ghost", size: "icon" }),
-                                            "size-12 rounded-full",
-                                        )}
-                                        target="_blank" rel="noopener noreferrer"
-                                    >
-                                        <social.icon className="size-4" />
-                                    </a>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>{name}</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </DockIcon>
-                    ))}
-                    <Separator orientation="vertical" className="h-3 py-1" />
+                    {/* <Separator orientation="vertical" className="h-full" /> */}
+                    {Object.entries(dockDatas.contact.social).map(
+                        ([name, social]) => (
+                            <DockIcon key={name}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <a
+                                            href={social.url}
+                                            className={cn(
+                                                buttonVariants({
+                                                    variant: "ghost",
+                                                    size: "icon",
+                                                }),
+                                                "size-12 rounded-full",
+                                            )}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <social.icon className="size-4" />
+                                        </a>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>{name}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </DockIcon>
+                        ),
+                    )}
+                    {/* <Separator orientation="vertical" className="h-3 py-1" /> */}
                     {/* <DockIcon> */}
                     {/*     <Tooltip> */}
                     {/*         <TooltipTrigger asChild> */}
@@ -186,6 +206,6 @@ const DockDemo = () => {
             </TooltipProvider>
         </div>
     );
-}
+};
 
-export default DockDemo ;
+export default DockDemo;

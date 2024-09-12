@@ -1,7 +1,16 @@
-import { BrowserRouter } from "react-router-dom"
-import { About , Contact , Experience , Feedbacks , Hero , Navbar , Tech , Works , StarsCanvas ,ParaHero } from './components'
-
-
+import { BrowserRouter } from "react-router-dom";
+import {
+    About,
+    Contact,
+    Experience,
+    Feedbacks,
+    Hero,
+    Navbar,
+    Tech,
+    Works,
+    StarsCanvas,
+    ParaHero,
+} from "./components";
 
 const App = () => {
     return (
@@ -12,12 +21,10 @@ const App = () => {
                     <ParaHero />
                 </div>
 
-
                 <div className="z-30 ">
                     <About />
                     <Experience />
                     <Tech />
-
 
                     <Works />
                     <Feedbacks />
@@ -27,11 +34,9 @@ const App = () => {
                     <Contact />
                     <StarsCanvas />
                 </div>
-
             </div>
         </BrowserRouter>
-    )
-}
+    );
+};
 
-export default App
-
+export default App;
