@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
 // import { technologies } from "@/constants"
 
 import { cn } from "@/lib/utils";
