@@ -2,24 +2,24 @@
 import { styles } from '../styles'
 import Position  from './Position'
 
-
 const ParaHero = () => {
 
     return (
         <section className=" relative w-full h-screen mx-auto mt-20 ">
 
+            <h1 className={`${styles.heroHeadText} text-[#facc15] absolute z-10 w-full text-center`}
+                style={{ top: '35%', transform: 'translateY(-50%)' }}
+            >
+                    Seth <span className='text-[#facc15] ml-3 md:ml-4 '>Phaeno</span>
+                    <Position />
+            </h1>
             <div className="parallax_content absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 ">
                 <div>
-                    <h1 className={`${styles.heroHeadText} text-[#facc15] mt-14 `}>
-                        Setthanan <span className='text-[#facc15]'>Pheno</span>
-                    </h1>
 
-                    <Position />
-
-                    <p className={`${styles.heroSubText} mt-16 drop-shadow-3xl bg-clip-text text-amber-400 backdrop-blur-[2px] backdrop-brightness-30  backdrop-contrast-120 `}>
-                        I am a self-motivated engineering student, <br className='sm:block hidden'/> 
-                    committed to evolving into a highly <br className='sm:block hidden'/> skilled software engineer. 
-                    </p>
+                    {/* <p className={`${styles.heroSubText} mt-16 drop-shadow-3xl bg-clip-text text-amber-400 backdrop-blur-[2px] backdrop-brightness-30  backdrop-contrast-120 `}> */}
+                    {/*     I am a self-motivated engineering student, <br className='sm:block hidden'/>  */}
+                    {/* committed to evolving into a highly <br className='sm:block hidden'/> skilled software engineer.  */}
+                    {/* </p> */}
 
                 </div>
             </div>

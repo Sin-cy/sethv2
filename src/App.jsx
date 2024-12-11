@@ -34,6 +34,9 @@ const App = () => {
                     <Contact />
                     <StarsCanvas />
                 </div>
+                <div className="text-neutral-500 px-1 flex flex-row-reverse mx-auto text-[10px] xs:text-[12px] sm:text-[14px] md:text-[14px] ">
+                    © 2023 Seth Phaeno
+                </div>
             </div>
         </BrowserRouter>
     );
