@@ -7,6 +7,7 @@ import { projects } from "../constants"
 import { fadeIn , textVariant } from '../utils/motion'
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text"
 import { cn } from "@/lib/utils";
+import { TextShimmer } from "./ui/text-shimmer"
 //data of the projects are in the file constants
 //Note that the data of the project can be changed in the constants file
 //be sure all elements passed in as parameters are properly filled
@@ -111,8 +112,10 @@ const Works = () => {
                         "inline-block py-1 px-3 group rounded-full border border-white bg-neutral-50 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-950 dark:hover:bg-neutral-950",
                     )}
                 >
-                    <AnimatedShinyText className={`${styles.sectionSubText} font-semibold text-lg`}>
-                        My Work
+                    <AnimatedShinyText className={`${styles.sectionSubText} font-semibold text-sm xs:text-sm md:text-lg lg:text-lg`}>
+                        <TextShimmer duration={1.7} >
+                            My Work
+                        </TextShimmer>
                     </AnimatedShinyText>
                 </div>
                 {/* <p className={styles.sectionSubText}>My Work</p> */}

@@ -8,7 +8,10 @@ import { services } from '../constants'
 import { fadeIn , textVariant } from '../utils/motion'
 
 import { SectionWrapper } from '../hoc'
-import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid'
+// import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid'
+import { TextShimmer } from './ui/text-shimmer'
+import AnimatedShinyText from './magicui/animated-shiny-text'
+import { cn } from '@/lib/utils'
 
 const ServiceCard = ({index , title , icon }) => {
     return(
@@ -37,7 +40,19 @@ const About = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>Introduction</p>
+                <p className={styles.sectionSubText}>
+                    <div
+                        className={cn(
+                            "inline-block py-1 px-3 group rounded-full border border-white bg-neutral-50 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-950 dark:hover:bg-neutral-950",
+                        )}
+                    >
+                        <AnimatedShinyText className={`${styles.sectionSubText} font-semibold text-sm xs:text-sm md:text-lg lg:text-lg `}>
+                            <TextShimmer duration={1.7} >
+                                Introduction
+                            </TextShimmer>
+                        </AnimatedShinyText>
+                    </div>
+                </p>
                 <h2 className={styles.sectionHeadText}>Overview</h2>
 
             </motion.div>
