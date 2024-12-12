@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindcssAnimate from "tailwindcss-animate";
-
 export default {
-    content: [
-        "./src/**/*.{js,ts,jsx,tsx}",
-        "./components/**/*.{js,ts,jsx,tsx}",
-        "./node_modules/@shadcn/ui/**/*.{js,ts,jsx,tsx}", // if using shadcn/ui
-    ],
+    content: ["./src/**/*.{js,jsx}"],
+    mode: "jit",
     theme: {
         extend: {
             colors: {
@@ -62,5 +57,5 @@ export default {
 
         },
     },
-    plugins: [tailwindcssAnimate],
+    plugins: [],
 };
