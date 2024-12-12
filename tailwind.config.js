@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssAnimate from "tailwindcss-animate";
+
 export default {
     content: [
         "./src/**/*.{js,ts,jsx,tsx}",
@@ -60,5 +62,5 @@ export default {
 
         },
     },
-    plugins: [],
+    plugins: [tailwindcssAnimate],
 };
