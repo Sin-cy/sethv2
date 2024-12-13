@@ -41,6 +41,7 @@ import cookieconsent from "./tech/cookieconsent.png"
 import portfolioBg from "./tech/portfolioBg.png"
 import passgen from "./tech/passgen.png"
 import addtocart from "./tech/addtocart.png"
+import toduit from "./tech/toduit.png"
 
 export {
     backend,
@@ -81,4 +82,5 @@ export {
     portfolioBg,
     passgen,
     addtocart,
+    toduit,
 };

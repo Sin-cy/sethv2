@@ -20,17 +20,16 @@ import {
     poddy,
     paom,
     projecttimesheet,
-    blackjack,
-    counterapp,
-    wargame,
-    boredbot,
-    blogspace,
-    dashboard,
     cookieconsent,
-    memegen,
     portfolioBg,
     passgen,
-    addtocart,
+    toduit,
+    // blackjack,
+    // counterapp,
+    // wargame,
+    // boredbot,
+    // dashboard,
+    // memegen,
 } from "../assets";
 
 export const navLinks = [
@@ -237,15 +236,34 @@ const projects = [
         image: projecttimesheet,
         // source_code_link: "https://github.com/",
     },
-
     {
-        name: "Password Generator",
+        name: "Toduit",
         description:
-            `This project generates a random password, with a click-to-copy feature. Initially, I used Math.random(), but as I learned better methods, I refactored the code to improve the random character generation process.`,
+            `A Full stack project - Simple Todo List app that a user can login for Authentication. Each user has their own account and their own Todo List. Using NodeJS + Express , Postgres Database with Prisma ORM to handle authentication and data + Docker container images to run the project on any platform.`,
         tags: [
             {
                 name: "JavaScript",
                 color: "green-text-gradient",
+            },
+            {
+                name: "NodeJS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Prisma",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Docker",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Postgres",
+                color: "blue-text-gradient",
             },
             {
                 name: "HTML",
@@ -256,9 +274,9 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: passgen,
+        image: toduit,
         source_code_link:
-            "https://github.com/Sin-cy/password-gen.git",
+            "https://github.com/Sin-cy/todoist-fs",
     },
     {
         name: "Cookie Consent",
@@ -284,9 +302,9 @@ const projects = [
         "https://github.com/Sin-cy/cookie-consent.git",
     },
     {
-        name: "War Game",
+        name: "Password Generator",
         description:
-            "The First project where I started using other third parties API's and implemented it into a card game",
+            ``,
         tags: [
             {
                 name: "JavaScript",
@@ -301,10 +319,32 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: wargame,
+        image: passgen,
         source_code_link:
-            "https://github.com/Sin-cy/js-projects/tree/main/APIs/AsyncJS/src",
+            "https://github.com/Sin-cy/password-gen.git",
     },
+    // {
+    //     name: "War Game",
+    //     description:
+    //         "The First project where I started using other third parties API's and implemented it into a card game",
+    //     tags: [
+    //         {
+    //             name: "JavaScript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "HTML",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "CSS",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: wargame,
+    //     source_code_link:
+    //         "https://github.com/Sin-cy/js-projects/tree/main/APIs/AsyncJS/src",
+    // },
     // {
     //     name: "Bored Bot Idea Generator",
     //     description:
@@ -353,28 +393,28 @@ const projects = [
     //     source_code_link:
     //         "https://github.com/Sin-cy/js-projects/tree/main/APIs/REST/src",
     // },
-    {
-        name: "Dashboard",
-        description:
-            "This Project uses the OpenWeather API, CrytoCurrency API and also a background wallpaper API to create a Dashboard that has a live current time update + current weather according to your location.",
-        tags: [
-            {
-                name: "javascript",
-                color: "green-text-gradient",
-            },
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: dashboard,
-        source_code_link:
-            "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
-    },
+    // {
+    //     name: "Dashboard",
+    //     description:
+    //         "This Project uses the OpenWeather API, CrytoCurrency API and also a background wallpaper API to create a Dashboard that has a live current time update + current weather according to your location.",
+    //     tags: [
+    //         {
+    //             name: "javascript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: dashboard,
+    //     source_code_link:
+    //         "https://github.com/Sin-cy/js-projects/tree/main/PromiseReject",
+    // },
     // {
     //     name: "Meme Generator",
     //     description:
